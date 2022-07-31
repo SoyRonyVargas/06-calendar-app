@@ -1,0 +1,17 @@
+.col--full
+{
+    height: 100%;
+    /* background-color: #FEF7F1; */
+    /* background-color: #ffe1e1; */
+    background-color: #fff3eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+.login__image
+{
+    width: 90%;
+    /* height: 55%;  */
+    /* max-width: 60%; */
+}
