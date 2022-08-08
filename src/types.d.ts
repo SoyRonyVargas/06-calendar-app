@@ -1,7 +1,7 @@
 import { AxiosError } from "axios"
 
 export type ThunkFunction = (
-    ( dispatch : AppDispatch , getState: () => RootState ) => Promise<void>
+    ( dispatch : AppDispatch , getState?: () => RootState ) => Promise<void>
 )
 
 export type AuthStatus = 'checking' | 'not-authenticated' | 'authenticated'
@@ -24,7 +24,7 @@ export type AuthLogin = Pick<User , "email"> & {
     password: string
 }
 
-export type AuthRegister = Pick<User , "email"> & {
+export type AuthRegister = Pick<User , "email" | "id"> & {
     password: string
     name: string
 }

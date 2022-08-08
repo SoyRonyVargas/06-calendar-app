@@ -59,6 +59,7 @@ export const {
 } = AuthSlice.actions
 
 export const selectUser = (state: RootState) => state.auth.user;
+export const selectAuthUser = ( state : RootState ) => state.auth.user;
 export const selectAuthStatus = ( state : RootState ) => state.auth.status;
 export const selectAuthError = ( state : RootState ) => state.auth.errorMsg;
 export const selectAuthLoader = ( state : RootState ) => state.auth.loading;

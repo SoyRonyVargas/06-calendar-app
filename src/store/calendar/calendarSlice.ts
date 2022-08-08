@@ -2,7 +2,7 @@ import { TEvent } from "./../../calendar/types/index";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-interface CalendarState {
+export interface CalendarState {
   activeEvent: TEvent | null;
   events: TEvent[];
   loading: boolean;
